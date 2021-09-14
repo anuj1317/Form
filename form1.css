@@ -83,7 +83,7 @@ select {
 input[type="file"] {
   display: none;
 }
-.Send {
+.send {
   background-color: rgb(215, 215, 215);
   padding: 5px;
   margin-top: 10px;
@@ -103,8 +103,11 @@ input[type="file"] {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+.option {
+  font-size: 50%;
+}
 
-.Attachments {
+.attachments {
   height: 30px;
   border-left: 1px solid black;
   border-top: 1px solid black;
