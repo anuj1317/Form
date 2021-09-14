@@ -31,6 +31,9 @@ div.main {
   text-decoration: none;
   font-size: 17px;
 }
+select {
+  color: white;
+}
 
 .topnav a:hover {
   background-color: whitesmoke;
@@ -55,12 +58,16 @@ div.main {
 }
 
 .heading {
-  border-radius: 5px;
-  background-color: rgb(215, 215, 215);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: rgba(205, 205, 205, 0.721);
   padding: 10px;
   width: 560px;
   height: 90px;
   padding-left: 25px;
+  border-top: 1px solid rgba(164, 164, 164, 0.92);
+  border-left: 1px solid rgba(164, 164, 164, 0.92);
+  border-right: 1px solid rgba(164, 164, 164, 0.92);
 }
 
 /* Form */
@@ -84,17 +91,22 @@ input[type="file"] {
   display: none;
 }
 .send {
-  background-color: rgb(215, 215, 215);
+  background-color: rgba(205, 205, 205, 0.721);
   padding: 5px;
-  margin-top: 10px;
   border-top: 1px black;
   display: flex;
   justify-content: end;
+  border-top: 1px solid rgb(181, 181, 181);
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
 }
 
 .fileattach {
   border: 1px solid #ccc;
-  display: inline-block;
+  display: block;
+  height: 30px;
   padding: 6px 12px;
   cursor: pointer;
   background-color: #d7d7d7;
@@ -105,12 +117,13 @@ input[type="file"] {
 }
 
 .attachments {
-  height: 30px;
+  height: 33px;
   border-left: 1px solid black;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   margin-right: 60px;
   text-align: start;
+  margin-bottom: 5px;
 }
 
 input[type="submit"] {
@@ -131,8 +144,6 @@ input[type="submit"]:hover {
 }
 
 div.form_container {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
   background-color: white;
   padding-left: 25px;
   padding: 5px;
@@ -140,15 +151,4 @@ div.form_container {
   width: 560px;
   border-left: 1px solid black;
   border-right: 1px solid black;
-  border-bottom: 1px solid black;
 }
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 600px) {
-  .col-25,
-  .col-75,
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
-  }
-} */
