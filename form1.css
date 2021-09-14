@@ -103,9 +103,6 @@ input[type="file"] {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.option {
-  font-size: 50%;
-}
 
 .attachments {
   height: 30px;
